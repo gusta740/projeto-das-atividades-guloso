@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Aluno</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2; 
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center; 
+      color: #333;
+    }
+
+    .caixa {
+      width: 350px;
+      margin: 20px auto;
+      background-color: white;
+      padding: 20px; 
+      border: 2px solid #ccc; 
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2); 
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, select, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 12px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #2b6cb0; 
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #245a92; 
+    }
+
+    .avisos {
+      width: 600px;
+      margin: 30px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .avisos h2 {
+      color: darkred; 
+    }
+
+    .avisos p {
+      font-size: 16px;
+      line-height: 1.6; 
+      color: #444;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Cadastro de Aluno</h1>
+
+  <div class="caixa">
+    <form>
+      <label>Nome:</label>
+      <input type="text" placeholder="Digite seu nome">
+
+      <label>E-mail:</label>
+      <input type="email" placeholder="Digite seu e-mail">
+
+      <label>Idade:</label>
+      <input type="number" placeholder="Digite sua idade">
+
+      <label>Turma:</label>
+      <select>
+        <option>1º Ano</option>
+        <option>2º Ano</option>
+        <option>3º Ano</option>
+      </select>
+
+      <button type="submit">Cadastrar</button>
+    </form>
+  </div>
+
+  <div class="avisos">
+    <h2>Avisos Importantes</h2>
+
+    <p>
+      As matrículas estarão abertas até o final do mês. Verifique se todos
+      os seus dados estão corretos antes de enviar o formulário.
+    </p>
+
+    <h2>Horário das Aulas</h2>
+
+    <p>
+      As aulas começam às 7h15. Chegue com pelo menos 10 minutos de
+      antecedência para evitar atrasos.
+    </p>
+  </div>
+
+</body>
+</html>

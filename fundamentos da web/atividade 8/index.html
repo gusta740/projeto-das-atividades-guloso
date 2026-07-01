@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 8</title>
+</head>
+<body>
+
+<h2>1. Exemplos de GET</h2>
+<ul>
+    <li>Buscar a lista de avisos.</li>
+    <li>Abrir a página inicial.</li>
+</ul>
+
+<h2>2. Exemplos de POST</h2>
+<ul>
+    <li>Cadastrar um novo aluno.</li>
+    <li>Adicionar um novo aviso.</li>
+</ul>
+
+<h2>3. O que significa 404</h2>
+<p>O código 404 significa que a página ou recurso não foi encontrado.</p>
+
+<h2>4. O que significa 201</h2>
+<p>O código 201 significa que um novo recurso foi criado com sucesso.</p>
+
+<h2>5. Exemplo de Request e Response</h2>
+
+<pre>
+POST /avisos HTTP/1.1
+Host: localhost:3000
+Content-Type: application/json
+
+{
+  "titulo": "Reunião de Pais"
+}
+</pre>
+
+<pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "mensagem": "Aviso cadastrado com sucesso!"
+}
+</pre>
+
+</body>
+</html>
